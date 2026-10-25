@@ -1,0 +1,16 @@
+.venv/
+.cache/
+tmp/
+__pycache__/
+.pytest_cache/
+*.pyc
+logs/
+checkpoints/*.zip
+checkpoints/*/*.zip
+videos/*.mp4
+.env
+output/*.zip
+
+# Include the SO-101 deliverables needed to reproduce the published results.
+!checkpoints/so101_seed*/*.zip
+!videos/so101_*.mp4

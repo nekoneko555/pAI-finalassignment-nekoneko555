@@ -1,0 +1,21 @@
+environment:
+  timestep: 0.01
+  action_repeat: 4
+  max_steps: 200
+  goal_tolerance: 0.05
+  hard_speed: 1.5
+  hard_acceleration: 4.0
+  joint_limit: 2.8
+  initial_q: [-0.8, 1.6]
+  fixed_goal: [0.32, 0.36]
+ppo:
+  learning_rate: 0.0003
+  gamma: 0.99
+  n_steps: 1024
+  batch_size: 64
+  net_arch: [64, 64]
+cloud:
+  preferred_gpu: L40
+  reference_usd_per_hour: 0.82
+  max_usd_per_hour_exclusive: 1.0
+  automatic_provisioning: false

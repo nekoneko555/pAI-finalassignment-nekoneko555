@@ -1,0 +1,14 @@
+{
+  "seed": 42,
+  "started_utc": "2026-10-23T05:20:33.094941+00:00",
+  "wall_time_s": 179.47076899999956,
+  "actual_timesteps": 131072,
+  "requested_timesteps": 131072,
+  "device": "cpu",
+  "resume": null,
+  "n_envs": 4,
+  "algorithm": "PPO bounded residual joint-speed control; IK waypoints and rule gripper",
+  "action_scale": 0.35,
+  "save_reload_equal": true,
+  "heldout_used_for_selection": false
+}

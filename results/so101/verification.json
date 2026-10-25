@@ -1,0 +1,194 @@
+{
+  "tests": 42,
+  "episodes": 1300,
+  "controllers": 13,
+  "cases_per_controller": 100,
+  "independent_seeds": 3,
+  "train_validation_test_disjoint": true,
+  "upstream_files_verified": 26,
+  "replays": [
+    {
+      "seed": 42,
+      "case": "so101-pickplace-1400000",
+      "equal": true
+    },
+    {
+      "seed": 123,
+      "case": "so101-pickplace-1400000",
+      "equal": true
+    },
+    {
+      "seed": 456,
+      "case": "so101-pickplace-1400000",
+      "equal": true
+    }
+  ],
+  "real_llm_demos": [
+    {
+      "mode": "careful",
+      "source": "ollama",
+      "command_limits": true,
+      "physical_grasp": true,
+      "success": true
+    },
+    {
+      "mode": "fast",
+      "source": "ollama",
+      "command_limits": true,
+      "physical_grasp": true,
+      "success": true
+    }
+  ],
+  "pdf": {
+    "file": "output/pdf/so101_report.pdf",
+    "sha256": "d663b67b22524b3a01d7c5a4f111c8a6d14a22d46c6e0dd180937b862bb8c94b",
+    "pages": 3,
+    "visually_reviewed_pages": [
+      1,
+      2,
+      3
+    ],
+    "all_pages_rendered": true,
+    "author_blank": true,
+    "debug_site_markers_hidden": true,
+    "pages_2_3_identical_to_previous_review": true
+  },
+  "llm_runtime_stopped": true,
+  "rendering_update": "debug sites hidden; original trajectory values verified unchanged",
+  "video": {
+    "path": "so101_final.mp4",
+    "bytes": 3921456,
+    "frames": 2394,
+    "fps": 25.0,
+    "duration_s": 95.76,
+    "frame_shape": [
+      640,
+      960,
+      3
+    ],
+    "decoded_first_and_last": true,
+    "playback_speed": 1,
+    "scene": "SO-101 physical pick/place",
+    "demo_case": "data/so101_test.json first case",
+    "demo_training_seed": 42
+  },
+  "submission_video": {
+    "file": "so101_submission.mp4",
+    "sha256": "712a2d1aec629202f7ef48818837f4d445f897a0ef1b5a88ff3d9a44fe537fdb",
+    "frames": 3050,
+    "fps": 30.0,
+    "duration_s": 101.67,
+    "size": [
+      1920,
+      1080
+    ],
+    "has_audio": false,
+    "segments": [
+      {
+        "segment": "op",
+        "input": {
+          "file": "so101_op.mp4",
+          "sha256": "42c6d8ef4939590d4db5b1b121f1d0ed2028619a5c78af4e14db23d67f853ac6",
+          "frames": 91,
+          "fps": 29.97,
+          "duration_s": 3.04,
+          "size": [
+            1920,
+            1080
+          ],
+          "has_audio": false
+        },
+        "start_frame": 0,
+        "start_s": 0.0,
+        "frames": 90,
+        "duration_s": 3.0
+      },
+      {
+        "segment": "main",
+        "input": {
+          "file": "so101_final.mp4",
+          "sha256": "b5dd4e75a6fd8374ca625a4349d738e2833a1126174ae5a4df843ad8d3fdbd10",
+          "frames": 2394,
+          "fps": 25.0,
+          "duration_s": 95.75999999999999,
+          "size": [
+            960,
+            640
+          ],
+          "has_audio": false
+        },
+        "start_frame": 90,
+        "start_s": 3.0,
+        "frames": 2872,
+        "duration_s": 95.73333333333333
+      },
+      {
+        "segment": "ed",
+        "input": {
+          "file": "so101_ed.mp4",
+          "sha256": "c2df9219ab6ef5fd272ff204b0815f890ddfca4d450896a946312b7f201589e3",
+          "frames": 89,
+          "fps": 29.97,
+          "duration_s": 2.97,
+          "size": [
+            1920,
+            1080
+          ],
+          "has_audio": false
+        },
+        "start_frame": 2962,
+        "start_s": 98.73333333333333,
+        "frames": 88,
+        "duration_s": 2.933333333333333
+      }
+    ],
+    "playback_speed": 1,
+    "full_decode_passed": true,
+    "fit": "preserve aspect ratio; pillarbox main content",
+    "audio": "none in all source files"
+  },
+  "cloud_gpu_hours": 0,
+  "cloud_gpu_cost_usd": 0,
+  "artifacts": [
+    {
+      "path": "README-SO101.md",
+      "sha256": "0c1bf8c6bb5d35093ccdd4ecaa22a33a9a2fe4a9b8c9beedb9eb334feb6fce60",
+      "bytes": 6811
+    },
+    {
+      "path": "report-so101.md",
+      "sha256": "ca0d70fab551d729a15681b22b502ad327fd36ec894140ab3e0ec6af68cdd8f0",
+      "bytes": 5452
+    },
+    {
+      "path": "videos/so101_final.mp4",
+      "sha256": "b5dd4e75a6fd8374ca625a4349d738e2833a1126174ae5a4df843ad8d3fdbd10",
+      "bytes": 3921456
+    },
+    {
+      "path": "output/pdf/so101_report.pdf",
+      "sha256": "d663b67b22524b3a01d7c5a4f111c8a6d14a22d46c6e0dd180937b862bb8c94b",
+      "bytes": 408369
+    },
+    {
+      "path": "results/so101/final/episode_results.csv",
+      "sha256": "5abf5846cfd33ea7003967ca452dcf6be39b03291bd76ecc91e93d08f32e9f64",
+      "bytes": 317027
+    },
+    {
+      "path": "results/so101/final/protocol.json",
+      "sha256": "49f0f12b3f08be85a4c971bd1699b459ccccb12662a7458afd9ccec0bce1281f",
+      "bytes": 1725
+    },
+    {
+      "path": "videos/so101_submission.mp4",
+      "sha256": "712a2d1aec629202f7ef48818837f4d445f897a0ef1b5a88ff3d9a44fe537fdb",
+      "bytes": 4018400
+    },
+    {
+      "path": "videos/so101_submission.json",
+      "sha256": "2c8dfc88fc31aa527b7acab5c781bb00dbe49f42045c82452ab76853ccfff817",
+      "bytes": 1827
+    }
+  ]
+}

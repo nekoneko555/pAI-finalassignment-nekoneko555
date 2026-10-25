@@ -1,0 +1,135 @@
+{
+  "path": "so101_final.mp4",
+  "bytes": 3921456,
+  "frames": 2394,
+  "fps": 25.0,
+  "duration_s": 95.76,
+  "frame_shape": [
+    640,
+    960,
+    3
+  ],
+  "decoded_first_and_last": true,
+  "segments": [
+    {
+      "type": "card",
+      "start_s": 0.0,
+      "duration_s": 8,
+      "text": [
+        "日本語で動作条件を変えるSO-101",
+        "A地点でつかむ → 持ち上げる → B地点へ運ぶ → 離す",
+        "実在するアームのMuJoCoモデル / 実機の映像ではない",
+        "物体は自由剛体 / 接触と摩擦で保持 / 固定拘束なし",
+        "動作映像は1倍速 / 説明カードではシミュレーション停止"
+      ]
+    },
+    {
+      "type": "card",
+      "start_s": 8.0,
+      "duration_s": 7,
+      "text": [
+        "制御の役割分担",
+        "IK: 経由姿勢を計算 / ルール: 作業の順番と指の開閉",
+        "PPO: 5関節の追従速度を最大±35%補正",
+        "LLM: 日本語からcareful / fastを選択",
+        "把持全体をゼロから学習した方式ではない"
+      ]
+    },
+    {
+      "type": "card",
+      "start_s": 15.0,
+      "duration_s": 5,
+      "text": [
+        "まず学習なしの基準動作",
+        "A=橙の領域 / B=緑の領域 / 赤い立方体を運搬",
+        "両指で持ち上げ、Bで離して静止するまで確認"
+      ]
+    },
+    {
+      "type": "clip",
+      "file": "so101_ik_reference.mp4",
+      "start_s": 20.0,
+      "duration_s": 8.56
+    },
+    {
+      "type": "chart",
+      "start_s": 28.56,
+      "duration_s": 8,
+      "text": [
+        "実測: PPO学習中の検証30配置 / 独立した3学習seed",
+        "成功率が最大、同率なら時間が短いモデルを選択"
+      ]
+    },
+    {
+      "type": "card",
+      "start_s": 36.56,
+      "duration_s": 6,
+      "text": [
+        "同じ物体・配置・PPO重みで日本語だけを変更",
+        "精密部品なので慎重にA地点からB地点へ運んで",
+        "ローカルLLMの実推論 → careful",
+        "速度指令上限0.4rad/s / 指令加速度上限0.8rad/s²"
+      ]
+    },
+    {
+      "type": "clip",
+      "file": "so101_careful_ppo.mp4",
+      "start_s": 42.56,
+      "duration_s": 13.88
+    },
+    {
+      "type": "card",
+      "start_s": 56.44,
+      "duration_s": 6,
+      "text": [
+        "次は速さを優先する指示",
+        "急いでA地点からB地点へ運んで",
+        "ローカルLLMの実推論 → fast",
+        "速度指令上限1.2rad/s / 指令加速度上限3.0rad/s²"
+      ]
+    },
+    {
+      "type": "clip",
+      "file": "so101_fast_ppo.mp4",
+      "start_s": 62.44,
+      "duration_s": 8.32
+    },
+    {
+      "type": "chart",
+      "start_s": 70.76,
+      "duration_s": 10,
+      "text": [
+        "実測: 未使用の100配置 / 同じ配置を全方式へ使用",
+        "PPOは3学習seedの平均 / 動画の成功例だけで集計しない"
+      ]
+    },
+    {
+      "type": "card",
+      "start_s": 80.76,
+      "duration_s": 7,
+      "text": [
+        "結果をどう読むか",
+        "IK基準の成功率: 100.0%",
+        "PPO標準の成功率: 100.0%",
+        "平均時間: IK 8.60秒 / PPO 8.40秒",
+        "PPOが把持を初めて可能にした、とは主張しない"
+      ]
+    },
+    {
+      "type": "card",
+      "start_s": 87.76,
+      "duration_s": 8,
+      "text": [
+        "確認できた範囲と限界",
+        "既知の立方体・狭いA/B範囲・既知の座標での検証",
+        "画像認識・任意物体・実機転移は未実装",
+        "慎重モードという名前は安全保証を意味しない",
+        "全試行CSV・重み・テスト・再現手順を同梱 / クラウドGPU未使用"
+      ]
+    }
+  ],
+  "playback_speed": 1,
+  "scene": "SO-101 physical pick/place",
+  "demo_case": "data/so101_test.json first case",
+  "demo_training_seed": 42
+}

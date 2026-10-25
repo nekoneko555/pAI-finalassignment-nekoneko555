@@ -1,0 +1,49 @@
+{
+  "models": [
+    {
+      "seed": 42,
+      "file": "checkpoints/so101_seed42/best_model.zip",
+      "sha256": "25c58ef61f19959b1af829d410478b3c94141afc87610511190797be4bb0fa7e"
+    },
+    {
+      "seed": 123,
+      "file": "checkpoints/so101_seed123/best_model.zip",
+      "sha256": "b5afa829d288cba3717bff4bdb506efee4c3086ecb9500ed9a1f07adf93d71bd"
+    },
+    {
+      "seed": 456,
+      "file": "checkpoints/so101_seed456/best_model.zip",
+      "sha256": "a50527bf344880a45bc5b53c254954176b91d4f3709a85a34b5da715c8e3e5e1"
+    }
+  ],
+  "test_cases_sha256": "b71008803501f9e594fbc25f9ce16d2f1c32045edaaab3b0ecd04f10f25d82d9",
+  "test_cases": 100,
+  "demo_seed_selected_before_test": 42,
+  "controller": "IK waypoints + PPO residual joint speeds + staged gripper",
+  "frozen_at_utc": "2026-10-23T05:30:16.533823+00:00",
+  "modes": {
+    "standard": [
+      1.2,
+      3.0
+    ],
+    "fast": [
+      1.2,
+      3.0
+    ],
+    "careful": [
+      0.4,
+      0.8
+    ]
+  },
+  "data_sha256": {
+    "data/so101_test.json": "b71008803501f9e594fbc25f9ce16d2f1c32045edaaab3b0ecd04f10f25d82d9",
+    "data/so101_train.json": "816e109c248aec3bc7b820d7dc641339cb86481b85db538f86606b83a532120f",
+    "data/so101_validation.json": "e3d9457a04ef4fc39258953a090fc5bd14f937cc5f9e19b120f108fea64ba627"
+  },
+  "source_sha256": {
+    "src/so101_env.py": "6d985b54297e69b6be16ef14252b38617bfde55e2244653a2a78058dc60a064f",
+    "src/so101_pickplace.py": "8860099cb99f46f6daf10542e23914a672bb7ad21c87876747ad8db7ba5bde9a",
+    "src/so101_task.py": "80c76718a62d15f952af76f052b097c72400233a284e5bc0ff5d689d33f97e88"
+  },
+  "demo_case_selected_before_final_test": "first case in data/so101_test.json"
+}

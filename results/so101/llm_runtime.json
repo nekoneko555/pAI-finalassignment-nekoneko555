@@ -1,0 +1,33 @@
+{
+  "version": {
+    "version": "0.40.9"
+  },
+  "running_models": {
+    "models": [
+      {
+        "name": "qwen2.5:1.5b",
+        "model": "qwen2.5:1.5b",
+        "size": 1112318934,
+        "digest": "65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen2",
+          "families": [
+            "qwen2"
+          ],
+          "parameter_size": "1.5B",
+          "quantization_level": "Q4_K_M"
+        },
+        "expires_at": "2026-10-23T14:38:01.1899882+09:00",
+        "size_vram": 0,
+        "context_length": 2048,
+        "runner": "llamacpp"
+      }
+    ]
+  },
+  "num_gpu_requested": 0,
+  "real_inferences": 2,
+  "cloud_used": false,
+  "server_stopped_after_recording": true
+}

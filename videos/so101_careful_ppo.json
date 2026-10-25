@@ -1,0 +1,58 @@
+{
+  "video": {
+    "path": "so101_careful_ppo.mp4",
+    "bytes": 1675720,
+    "frames": 347,
+    "fps": 25.0,
+    "duration_s": 13.88,
+    "frame_shape": [
+      640,
+      960,
+      3
+    ],
+    "decoded_first_and_last": true
+  },
+  "case": {
+    "id": "so101-pickplace-1400000",
+    "seed": 1400000,
+    "a": [
+      0.22716355768852153,
+      -0.09742722260085
+    ],
+    "b": [
+      0.224293995900396,
+      0.09709824507166659
+    ]
+  },
+  "outcome": {
+    "is_success": true,
+    "lifted": true,
+    "physical_grasp": true,
+    "released": true,
+    "phase": "RETREAT",
+    "completed_phases": 8,
+    "phase_timeout": false,
+    "invalid_state": false,
+    "dropped": false,
+    "elapsed_time_s": 13.88,
+    "final_xy_error_m": 0.01283874260734312,
+    "object_height_m": 0.01794662799435067,
+    "max_object_height_m": 0.06300312135251655,
+    "object_settled": true,
+    "tip_speed_m_s": 3.589447630236488e-13,
+    "mode": "careful",
+    "object_is_free_body": true,
+    "weld_constraints": 0
+  },
+  "interpreter": {
+    "text": "精密部品なので慎重にA地点からB地点へ運んで",
+    "llm_model": "qwen2.5:1.5b",
+    "mode": "careful",
+    "reason": "精密部品はcareful",
+    "source": "ollama",
+    "elapsed_s": 5.305064100000891,
+    "error": null
+  },
+  "controller": "IK waypoints + PPO residual joint speeds + rule gripper",
+  "model_sha256": "25c58ef61f19959b1af829d410478b3c94141afc87610511190797be4bb0fa7e"
+}

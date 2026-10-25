@@ -1,0 +1,75 @@
+{
+  "file": "so101_submission.mp4",
+  "sha256": "712a2d1aec629202f7ef48818837f4d445f897a0ef1b5a88ff3d9a44fe537fdb",
+  "frames": 3050,
+  "fps": 30.0,
+  "duration_s": 101.67,
+  "size": [
+    1920,
+    1080
+  ],
+  "has_audio": false,
+  "segments": [
+    {
+      "segment": "op",
+      "input": {
+        "file": "so101_op.mp4",
+        "sha256": "42c6d8ef4939590d4db5b1b121f1d0ed2028619a5c78af4e14db23d67f853ac6",
+        "frames": 91,
+        "fps": 29.97,
+        "duration_s": 3.04,
+        "size": [
+          1920,
+          1080
+        ],
+        "has_audio": false
+      },
+      "start_frame": 0,
+      "start_s": 0.0,
+      "frames": 90,
+      "duration_s": 3.0
+    },
+    {
+      "segment": "main",
+      "input": {
+        "file": "so101_final.mp4",
+        "sha256": "b5dd4e75a6fd8374ca625a4349d738e2833a1126174ae5a4df843ad8d3fdbd10",
+        "frames": 2394,
+        "fps": 25.0,
+        "duration_s": 95.75999999999999,
+        "size": [
+          960,
+          640
+        ],
+        "has_audio": false
+      },
+      "start_frame": 90,
+      "start_s": 3.0,
+      "frames": 2872,
+      "duration_s": 95.73333333333333
+    },
+    {
+      "segment": "ed",
+      "input": {
+        "file": "so101_ed.mp4",
+        "sha256": "c2df9219ab6ef5fd272ff204b0815f890ddfca4d450896a946312b7f201589e3",
+        "frames": 89,
+        "fps": 29.97,
+        "duration_s": 2.97,
+        "size": [
+          1920,
+          1080
+        ],
+        "has_audio": false
+      },
+      "start_frame": 2962,
+      "start_s": 98.73333333333333,
+      "frames": 88,
+      "duration_s": 2.933333333333333
+    }
+  ],
+  "playback_speed": 1,
+  "full_decode_passed": true,
+  "fit": "preserve aspect ratio; pillarbox main content",
+  "audio": "none in all source files"
+}

@@ -1,0 +1,14 @@
+{
+  "file": "output/pdf/so101_report.pdf",
+  "sha256": "d663b67b22524b3a01d7c5a4f111c8a6d14a22d46c6e0dd180937b862bb8c94b",
+  "pages": 3,
+  "visually_reviewed_pages": [
+    1,
+    2,
+    3
+  ],
+  "all_pages_rendered": true,
+  "author_blank": true,
+  "debug_site_markers_hidden": true,
+  "pages_2_3_identical_to_previous_review": true
+}

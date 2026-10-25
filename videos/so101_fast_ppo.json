@@ -1,0 +1,58 @@
+{
+  "video": {
+    "path": "so101_fast_ppo.mp4",
+    "bytes": 927324,
+    "frames": 208,
+    "fps": 25.0,
+    "duration_s": 8.32,
+    "frame_shape": [
+      640,
+      960,
+      3
+    ],
+    "decoded_first_and_last": true
+  },
+  "case": {
+    "id": "so101-pickplace-1400000",
+    "seed": 1400000,
+    "a": [
+      0.22716355768852153,
+      -0.09742722260085
+    ],
+    "b": [
+      0.224293995900396,
+      0.09709824507166659
+    ]
+  },
+  "outcome": {
+    "is_success": true,
+    "lifted": true,
+    "physical_grasp": true,
+    "released": true,
+    "phase": "RETREAT",
+    "completed_phases": 8,
+    "phase_timeout": false,
+    "invalid_state": false,
+    "dropped": false,
+    "elapsed_time_s": 8.32,
+    "final_xy_error_m": 0.01145533987310648,
+    "object_height_m": 0.017946627994350636,
+    "max_object_height_m": 0.0661441336231655,
+    "object_settled": true,
+    "tip_speed_m_s": 5.753637142594956e-13,
+    "mode": "fast",
+    "object_is_free_body": true,
+    "weld_constraints": 0
+  },
+  "interpreter": {
+    "text": "急いでA地点からB地点へ運んで",
+    "llm_model": "qwen2.5:1.5b",
+    "mode": "fast",
+    "reason": "急いでA地点からB地点へ運んで",
+    "source": "ollama",
+    "elapsed_s": 1.4427157000027364,
+    "error": null
+  },
+  "controller": "IK waypoints + PPO residual joint speeds + rule gripper",
+  "model_sha256": "25c58ef61f19959b1af829d410478b3c94141afc87610511190797be4bb0fa7e"
+}

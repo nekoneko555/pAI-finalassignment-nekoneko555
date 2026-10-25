@@ -1,0 +1,34 @@
+<mujoco model="Instruction-Aware Safe Motion">
+  <compiler angle="radian"/>
+  <option timestep="0.01" gravity="0 0 0" integrator="implicitfast"/>
+  <visual><global offwidth="960" offheight="640"/><headlight ambient="0.5 0.5 0.5"/></visual>
+  <default>
+    <joint type="hinge" axis="0 0 1" limited="true" range="-2.8 2.8" damping="0.06" armature="0.02"/>
+    <geom friction="0.5 0.1 0.1" density="700"/>
+  </default>
+  <worldbody>
+    <light pos="0 0 2" diffuse="0.9 0.9 0.9"/>
+    <camera name="overview" pos="0.20 0.15 2.1" quat="1 0 0 0"/>
+    <geom name="floor" type="plane" size="1 1 0.01" rgba="0.07 0.10 0.16 1" contype="0" conaffinity="0"/>
+    <geom name="base" type="cylinder" pos="0 0 0.045" size="0.055 0.045" rgba="0.45 0.52 0.62 1" contype="0" conaffinity="0"/>
+    <body name="upper" pos="0 0 0.10">
+      <joint name="shoulder"/>
+      <geom name="link1" type="capsule" fromto="0 0 0 0.35 0 0" size="0.022" rgba="0.13 0.72 0.85 1" contype="1" conaffinity="2"/>
+      <body name="forearm" pos="0.35 0 0">
+        <joint name="elbow"/>
+        <geom name="link2" type="capsule" fromto="0 0 0 0.30 0 0" size="0.022" rgba="0.28 0.87 0.66 1" contype="1" conaffinity="2"/>
+        <site name="tip" pos="0.30 0 0" size="0.025" rgba="1 1 1 1"/>
+      </body>
+    </body>
+    <body name="target" mocap="true" pos="0.32 0.36 0.10">
+      <geom name="target_marker" type="sphere" size="0.035" rgba="0.98 0.77 0.22 0.8" contype="0" conaffinity="0"/>
+    </body>
+    <body name="obstacle" mocap="true" pos="2 2 0.10">
+      <geom name="obstacle_geom" type="cylinder" size="0.055 0.10" rgba="0.95 0.28 0.35 1" contype="2" conaffinity="1"/>
+    </body>
+  </worldbody>
+  <actuator>
+    <velocity name="shoulder_velocity" joint="shoulder" kv="3" ctrlrange="-1.5 1.5" forcerange="-4 4"/>
+    <velocity name="elbow_velocity" joint="elbow" kv="3" ctrlrange="-1.5 1.5" forcerange="-4 4"/>
+  </actuator>
+</mujoco>

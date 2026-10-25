@@ -1,0 +1,165 @@
+{
+  "repository": "https://github.com/google-deepmind/mujoco_menagerie",
+  "commit": "cda5236f98383f6fbaa4820c6b18dba892cd087f",
+  "upstream_directory": "robotstudio_so101",
+  "license": "Apache-2.0",
+  "upstream_files_modified": false,
+  "files": [
+    {
+      "file": "CHANGELOG.md",
+      "git_blob": "d8318d4c49688f8ea714e4dce5349c4958783d0e",
+      "sha256": "ac7f6205e40f0fb2bc08ff3ff4c5e5092dacf8d78cb03f024ae9aae33738acc4",
+      "bytes": 391
+    },
+    {
+      "file": "LICENSE",
+      "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    {
+      "file": "README.md",
+      "git_blob": "65129dba053c84d2ad384b1922cea46b119e9036",
+      "sha256": "e2344e7c14290bed85c7907247aecb8bf6cb4392e3de0d7c45680efe9bb9b5a9",
+      "bytes": 1142
+    },
+    {
+      "file": "assets/base_motor_holder_so101_v1.stl",
+      "git_blob": "cac2b8dd98d3d8a6dcdf429b36aaa4b576d82041",
+      "sha256": "8cd2f241037ea377af1191fffe0dd9d9006beea6dcc48543660ed41647072424",
+      "bytes": 1877084
+    },
+    {
+      "file": "assets/base_so101_v2.stl",
+      "git_blob": "ed10aa61d1181f8001c908ee5cae5c4f970ba417",
+      "sha256": "bb12b7026575e1f70ccc7240051f9d943553bf34e5128537de6cd86fae33924d",
+      "bytes": 471584
+    },
+    {
+      "file": "assets/motor_holder_so101_base_v1.stl",
+      "git_blob": "9eaf67243a5ffc2dacb3fbd026b4c0620adcdd66",
+      "sha256": "31242ae6fb59d8b15c66617b88ad8e9bded62d57c35d11c0c43a70d2f4caa95b",
+      "bytes": 1129384
+    },
+    {
+      "file": "assets/motor_holder_so101_wrist_v1.stl",
+      "git_blob": "d0aa18b15a9cd63f41fa4d48e82df7a3b618c75d",
+      "sha256": "887f92e6013cb64ea3a1ab8675e92da1e0beacfd5e001f972523540545e08011",
+      "bytes": 1052184
+    },
+    {
+      "file": "assets/moving_jaw_so101_gripper_part0_v1.stl",
+      "git_blob": "d8dd83494b31952e2f52432bc9624e74bd241030",
+      "sha256": "3a92e115d1934d4c45cff808c4eff2ea10361a137a7f89940033a1f8a821b88c",
+      "bytes": 50684
+    },
+    {
+      "file": "assets/moving_jaw_so101_gripper_part1_v1.stl",
+      "git_blob": "ed758675140114dbab751f93ea7d40b8d27e4594",
+      "sha256": "d10f6c671d26f62988ec95efee9370a0657b5833b3c5f8aad59fd69a87ef2aee",
+      "bytes": 342684
+    },
+    {
+      "file": "assets/moving_jaw_so101_gripper_v1.stl",
+      "git_blob": "f5bd23f855f0d90f73d00abef90576d0c7120719",
+      "sha256": "e8a5dc040b98e27453a5b74f9087d1dbca14589cf9a17c4de7868d5ab98413cd",
+      "bytes": 690384
+    },
+    {
+      "file": "assets/moving_jaw_so101_v1.stl",
+      "git_blob": "7e8736686592072cf34c7f6e2e6e88f8a3ba60bb",
+      "sha256": "785a9dded2f474bc1d869e0d3dae398a3dcd9c0c345640040472210d2861fa9d",
+      "bytes": 1413584
+    },
+    {
+      "file": "assets/rotation_pitch_so101_v1.stl",
+      "git_blob": "5c05dee570623f62c4ab7597d76c7bdea20eacea",
+      "sha256": "9be900cc2a2bf718102841ef82ef8d2873842427648092c8ed2ca1e2ef4ffa34",
+      "bytes": 883684
+    },
+    {
+      "file": "assets/sts3215_03a_no_horn_v1.stl",
+      "git_blob": "2a89597702f5ec6849b6b1b894c867b35b98ca42",
+      "sha256": "75ef3781b752e4065891aea855e34dc161a38a549549cd0970cedd07eae6f887",
+      "bytes": 865884
+    },
+    {
+      "file": "assets/sts3215_03a_v1.stl",
+      "git_blob": "fe05403dbfac7a26822b8c8cd0fc3d5288a69fc8",
+      "sha256": "a37c871fb502483ab96c256baf457d36f2e97afc9205313d9c5ab275ef941cd0",
+      "bytes": 954084
+    },
+    {
+      "file": "assets/under_arm_so101_v1.stl",
+      "git_blob": "480e0583c8bb27ff9affefbebee72b784fb054c8",
+      "sha256": "d01d1f2de365651dcad9d6669e94ff87ff7652b5bb2d10752a66a456a86dbc71",
+      "bytes": 1975884
+    },
+    {
+      "file": "assets/upper_arm_so101_v1.stl",
+      "git_blob": "9c0f9b275a51f720476e529c92193f4f69d4784c",
+      "sha256": "475056e03a17e71919b82fd88ab9a0b898ab50164f2a7943652a6b2941bb2d4f",
+      "bytes": 1303484
+    },
+    {
+      "file": "assets/waveshare_mounting_plate_so101_v2.stl",
+      "git_blob": "4dba1f22b01ab9afef2466872fcb3e1efca89e38",
+      "sha256": "e197e24005a07d01bbc06a8c42311664eaeda415bf859f68fa247884d0f1a6e9",
+      "bytes": 62784
+    },
+    {
+      "file": "assets/wrist_roll_follower_so101_camera_mount.stl",
+      "git_blob": "dfe1ecc5e11eb79280c032148ad6ba68a21c431e",
+      "sha256": "58c457b33a26d9c9bb337aa351173e7123f84719a93f486541adef6eba57ae21",
+      "bytes": 122884
+    },
+    {
+      "file": "assets/wrist_roll_follower_so101_gripper_part0_v1.stl",
+      "git_blob": "7a6bdae516080bd381758fb87cfa48beab3c96b9",
+      "sha256": "370eb470a6ab48b08febcaeb5274d2bcc91246692532ce12c795fb82977def72",
+      "bytes": 73784
+    },
+    {
+      "file": "assets/wrist_roll_follower_so101_gripper_v1.stl",
+      "git_blob": "279308978e9d64d0bb231968d6169ce78aa0ebde",
+      "sha256": "65f32debcf265420c0160afe004f8befc5df4b3e578fd59ebaa62eade0371224",
+      "bytes": 741684
+    },
+    {
+      "file": "assets/wrist_roll_follower_so101_v1.stl",
+      "git_blob": "123ce374ad3efc240e4d7022f31314e59fe4b0c0",
+      "sha256": "4b17b410a12d64ec39554abc3e8054d8a97384b2dc4a8d95a5ecb2a93670f5f4",
+      "bytes": 1439884
+    },
+    {
+      "file": "assets/wrist_roll_pitch_so101_v2.stl",
+      "git_blob": "ac5172a35e6da3e9fdea21e25803f23cc61e31f1",
+      "sha256": "6c7ec5525b4d8b9e397a30ab4bb0037156a5d5f38a4adf2c7d943d6c56eda5ae",
+      "bytes": 2699784
+    },
+    {
+      "file": "scene.xml",
+      "git_blob": "f6d8d5b119f0966a8c1139fa65277355b8474327",
+      "sha256": "d3037f0fd36b61a9b6805b2c79831e7a392276d0f490145d01f718542eee9150",
+      "bytes": 825
+    },
+    {
+      "file": "scene_box.xml",
+      "git_blob": "f51dd3b7609d75c0a26d2735e924c140a15b72b1",
+      "sha256": "14c3826f23889587e63b88ef9a0e7d72318ffe13078fad8287c56dbdb9ba9ad8",
+      "bytes": 1469
+    },
+    {
+      "file": "so101.png",
+      "git_blob": "f9ac493bb3809531abe7f23ef7168d15315c2c23",
+      "sha256": "fca552381f318dab5b1f9a69007e79d905d91c9d1bebbfdf267b78d924a9c46d",
+      "bytes": 1010575
+    },
+    {
+      "file": "so101.xml",
+      "git_blob": "38bd905c819c8c6d755fecb6394d166944262cce",
+      "sha256": "982c02c027ec0c62d3459d0a6eb00dfb7dc13a451992e72ce99addc71f209805",
+      "bytes": 17206
+    }
+  ]
+}

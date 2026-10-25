@@ -1,0 +1,35 @@
+{
+  "mode": "standard",
+  "elapsed_time_s": 8.68,
+  "lifted": true,
+  "both_jaws_contact_while_lifted": true,
+  "max_object_height_m": 0.06523786010754322,
+  "final_object_position": [
+    0.23042516224991313,
+    0.07844289993112327,
+    0.017946627994350605
+  ],
+  "target_b": [
+    0.23,
+    0.09
+  ],
+  "final_xy_error_m": 0.011564917852746798,
+  "released": true,
+  "object_is_free_body": true,
+  "weld_constraints": 0,
+  "controller": "IK + staged gripper",
+  "success": true,
+  "video": {
+    "path": "so101_pickplace_ik.mp4",
+    "bytes": 961655,
+    "frames": 217,
+    "fps": 25.0,
+    "duration_s": 8.68,
+    "frame_shape": [
+      640,
+      960,
+      3
+    ],
+    "decoded_first_and_last": true
+  }
+}

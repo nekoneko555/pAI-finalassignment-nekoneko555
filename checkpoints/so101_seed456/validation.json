@@ -1,0 +1,32 @@
+[
+  {
+    "timesteps": 0,
+    "success_rate": 1.0,
+    "mean_time_s": 8.593333333333334
+  },
+  {
+    "timesteps": 32768,
+    "success_rate": 1.0,
+    "mean_time_s": 8.447999999999999
+  },
+  {
+    "timesteps": 65536,
+    "success_rate": 1.0,
+    "mean_time_s": 8.558666666666664
+  },
+  {
+    "timesteps": 98304,
+    "success_rate": 1.0,
+    "mean_time_s": 8.466666666666667
+  },
+  {
+    "timesteps": 131072,
+    "success_rate": 1.0,
+    "mean_time_s": 8.542666666666666
+  },
+  {
+    "timesteps": 131072,
+    "success_rate": 1.0,
+    "mean_time_s": 8.538666666666668
+  }
+]

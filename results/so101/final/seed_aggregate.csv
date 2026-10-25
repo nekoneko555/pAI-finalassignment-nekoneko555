@@ -1,0 +1,4 @@
+mode,training_seeds,cases_per_seed,mean_success_rate,sd_success_rate,mean_time_s,mean_tip_speed_m_s
+standard,3,100,1.0,0.0,8.396533333333332,0.0666910825165109
+careful,3,100,1.0,0.0,13.643333333333333,0.04198562227102917
+fast,3,100,1.0,0.0,8.396533333333332,0.0666910825165109

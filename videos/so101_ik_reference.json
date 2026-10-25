@@ -1,0 +1,52 @@
+{
+  "video": {
+    "path": "so101_ik_reference.mp4",
+    "bytes": 951229,
+    "frames": 214,
+    "fps": 25.0,
+    "duration_s": 8.56,
+    "frame_shape": [
+      640,
+      960,
+      3
+    ],
+    "decoded_first_and_last": true
+  },
+  "case": {
+    "id": "so101-pickplace-1400000",
+    "seed": 1400000,
+    "a": [
+      0.22716355768852153,
+      -0.09742722260085
+    ],
+    "b": [
+      0.224293995900396,
+      0.09709824507166659
+    ]
+  },
+  "outcome": {
+    "is_success": true,
+    "lifted": true,
+    "physical_grasp": true,
+    "released": true,
+    "phase": "RETREAT",
+    "completed_phases": 8,
+    "phase_timeout": false,
+    "invalid_state": false,
+    "dropped": false,
+    "elapsed_time_s": 8.56,
+    "final_xy_error_m": 0.012008452885780669,
+    "object_height_m": 0.017946627994350622,
+    "max_object_height_m": 0.06514658799584823,
+    "object_settled": true,
+    "tip_speed_m_s": 7.750624130670415e-13,
+    "mode": "standard",
+    "object_is_free_body": true,
+    "weld_constraints": 0
+  },
+  "interpreter": {
+    "source": "explicit_mode"
+  },
+  "controller": "IK baseline",
+  "model_sha256": null
+}

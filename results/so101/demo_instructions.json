@@ -1,0 +1,20 @@
+{
+  "careful": {
+    "text": "精密部品なので慎重にA地点からB地点へ運んで",
+    "llm_model": "qwen2.5:1.5b",
+    "mode": "careful",
+    "reason": "精密部品はcareful",
+    "source": "ollama",
+    "elapsed_s": 5.305064100000891,
+    "error": null
+  },
+  "fast": {
+    "text": "急いでA地点からB地点へ運んで",
+    "llm_model": "qwen2.5:1.5b",
+    "mode": "fast",
+    "reason": "急いでA地点からB地点へ運んで",
+    "source": "ollama",
+    "elapsed_s": 1.4427157000027364,
+    "error": null
+  }
+}
